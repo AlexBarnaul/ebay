@@ -1,0 +1,10 @@
+<svg fill="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+	<defs>
+		<path id="g3tla" d="M1122.696 39.696a1.007 1.007 0 0 1-1.425 0l-3.09-3.09A6.96 6.96 0 0 1 1114 38a7 7 0 1 1 7-7 6.96 6.96 0 0 1-1.395 4.18l3.091 3.09a1.008 1.008 0 0 1 0 1.426zM1114 26a5 5 0 1 0 0 10 5 5 0 0 0 0-10z" />
+	</defs>
+	<g>
+		<g transform="translate(-1107 -24)">
+			<use xlink:href="#g3tla" />
+		</g>
+	</g>
+</svg>

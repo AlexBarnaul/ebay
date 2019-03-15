@@ -1,9 +1,10 @@
-$red: red;
-
 body {
-	color: $red;
+	font-family: "montserrat";
+	font-weight: 400;
 }
 
-.nav {
-	background-color: yellowgreen;
-}
+@import "fonts";
+@import "blocks/select";
+@import "blocks/input-text";
+@import "blocks/header";
+@import "blocks/menubar";
