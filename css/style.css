@@ -1,6 +1,7 @@
 body {
   font-family: "montserrat";
   font-weight: 400;
+  background-color: #edf1f2;
 }
 
 @font-face {
@@ -50,6 +51,7 @@ body {
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
+  background-color: #3f4246;
 }
 
 .main-header__list-top {
@@ -132,7 +134,7 @@ body {
   margin-top: 5px;
 }
 .main-header__link:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #86b817;
 }
 .main-header__link--cart {
   background-image: url("../img/icon-cart.svg");
@@ -188,10 +190,11 @@ body {
 }
 
 .menubar__list {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -252,15 +255,17 @@ body {
   padding: 0;
   margin: 0;
 }
+.menubar__item:last-child {
+  margin-left: auto;
+}
 
 .menubar__category-item {
   display: block;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: transparent;
-  width: 271px;
-  height: 44px;
+  width: 270px;
+  height: 46px;
   line-height: 44px;
   border-bottom: 1px solid #f0f3f5;
   position: relative;
@@ -278,17 +283,139 @@ body {
   border-left-color: transparent;
   transform: rotate(-45deg);
 }
+.menubar__category-item:not(:first-child) {
+  background-color: #fff;
+}
 
 .menubar__item--dropped {
   background-color: #86b817;
   position: relative;
-  width: 271px;
+  width: 270px;
   height: auto;
 }
 
 .menubar__category-list {
   position: absolute;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+}
+
+.navpromo {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.navpromo__wrapper {
+  width: 1200px;
+  display: block;
+  box-sizing: border-box;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 0 auto;
+  min-height: 442px;
+}
+.navpromo__wrapper::after {
+  display: table;
+  height: 1px;
+  clear: both;
+}
+
+.navpromo__slider {
+  width: 875px;
+  min-height: 449px;
+  float: right;
+  margin-top: 15px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+}
+
+.navpromo__slider-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.navpromo__img-container {
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.navpromo__img-container--sellings {
+  z-index: 15;
+}
+.navpromo__img-container--shoes {
+  z-index: 10;
+}
+.navpromo__img-container--laptops {
+  z-index: 5;
+}
+
+.navpromo__slider-img {
+  height: auto;
+  width: 100%;
+}
+
+.navpromo__switcher {
+  display: none;
+}
+
+.navpromo__label-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 54px;
+  box-sizing: border-box;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.navpromo__label {
+  height: 54px;
+  color: #4b4b4b;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 54px;
+  text-align: center;
+  text-transform: capitalize;
+  display: block;
+  width: 135px;
+  border-bottom: 2px solid transparent;
+}
+.navpromo__label:hover {
+  color: #7e7e7e;
+  cursor: pointer;
+}
+
+#navpromo__switcher-1:checked ~ .navpromo__label-container .navpromo__label--1,
+#navpromo__switcher-2:checked ~ .navpromo__label-container .navpromo__label--2,
+#navpromo__switcher-3:checked ~ .navpromo__label-container .navpromo__label--3,
+#navpromo__switcher-4:checked ~ .navpromo__label-container .navpromo__label--4,
+#navpromo__switcher-5:checked ~ .navpromo__label-container .navpromo__label--5,
+#navpromo__switcher-6:checked ~ .navpromo__label-container .navpromo__label--6 {
+  border-bottom: 2px solid #86b817;
+}
+
+#navpromo__switcher-1:checked ~ .navpromo__slider-list .navpromo__img-container--sellings,
+#navpromo__switcher-2:checked ~ .navpromo__slider-list .navpromo__img-container--laptops,
+#navpromo__switcher-3:checked ~ .navpromo__slider-list .navpromo__img-container--shoes,
+#navpromo__switcher-4:checked ~ .navpromo__slider-list .navpromo__img-container--sellings,
+#navpromo__switcher-5:checked ~ .navpromo__slider-list .navpromo__img-container--laptops,
+#navpromo__switcher-6:checked ~ .navpromo__slider-list .navpromo__img-container--shoes {
+  z-index: 500;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 body {
 	font-family: "montserrat";
 	font-weight: 400;
+	background-color: #edf1f2;
 }
 
 @import "fonts";
@@ -8,3 +9,5 @@ body {
 @import "blocks/input-text";
 @import "blocks/header";
 @import "blocks/menubar";
+@import "blocks/navpromo";
+@import "blocks/visually-hidden";
