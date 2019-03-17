@@ -1,51 +1,21 @@
 .featured__wrapper {
 	@include wrapper;
 	margin-top: 15px;
+	background-color: #fff;
+	margin-bottom: 20px;
 }
 
 .featured__header {
-	border-bottom: 1px solid $greyborder;
-	min-height: 70px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	box-sizing: border-box;
-
-	&::after {
-		@include clearfix;
-	}
-}
-
-.featured__title {
-	margin: 0;
-	padding: 0;
-	display: block;
-	float: left;
-	color: #202326;
-	font-size: 24px;
-	font-weight: 300;
-	line-height: 26px;
-}
-
-.featured__more {
-	display: block;
-	color: $bluelink;
-	float: right;
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 26px;
-	text-decoration: underline;
-
-	&:hover {
-		color: lighten($bluelink, 20%);
-	}
+	min-height: 70px;
 }
 
 .featured__showcase-flex {
 	padding: 30px;
 	padding-bottom: 5px;
-	margin-bottom: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;

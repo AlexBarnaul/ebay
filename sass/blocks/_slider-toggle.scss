@@ -1,0 +1,17 @@
+.slider-toggle {
+	display: none;
+}
+
+.slider-toggle__label {
+	width: 12px;
+	height: 12px;
+	border: 2px solid #a3a9ad;
+	display: block;
+	box-sizing: border-box;
+	border-radius: 50%;
+	cursor: pointer;
+
+	&:hover {
+		border-color: lighten(#a3a9ad, 20%);
+	}
+}

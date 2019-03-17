@@ -1,0 +1,38 @@
+.header-section {
+	box-sizing: border-box;
+	background-color: #fff;
+
+	&::after {
+		@include clearfix;
+	}
+}
+
+.header-section__title {
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: left;
+	color: #202326;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 26px;
+	text-transform: capitalize;
+}
+
+.header-section__more {
+	display: block;
+	color: $bluelink;
+	float: right;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26px;
+	text-decoration: underline;
+
+	&:hover {
+		color: lighten($bluelink, 20%);
+	}
+
+	&--daily {
+		margin-right: 17px;
+	}
+}
