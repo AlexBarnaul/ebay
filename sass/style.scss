@@ -5,9 +5,13 @@ body {
 }
 
 @import "fonts";
+@import "mixins";
+@import "variables";
 @import "blocks/select";
 @import "blocks/input-text";
 @import "blocks/header";
 @import "blocks/menubar";
 @import "blocks/navpromo";
+@import "blocks/featured";
+@import "blocks/card";
 @import "blocks/visually-hidden";
