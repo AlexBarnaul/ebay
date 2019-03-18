@@ -25,6 +25,10 @@
 	position: relative;
 	cursor: pointer;
 
+	&:active {
+		background-color: darken(#62bf43, 20%);
+	}
+
 	&:hover {
 		background-color: lighten(#62bf43, 20%);
 	}
